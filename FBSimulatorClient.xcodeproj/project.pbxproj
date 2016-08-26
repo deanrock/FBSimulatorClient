@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		934B20AAB385BC68DFAC28BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265863029E5263540041DF39 /* libPods.a */; };
+		E10249DDE3457ABCAB14D4DD /* Pods_FBSimulatorClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C0A8F7841EF34A0E586D1A /* Pods_FBSimulatorClient.framework */; };
 		FF15E8461BEF7A1C0070635D /* KillRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E8451BEF7A1C0070635D /* KillRequestHandler.swift */; };
 		FF15E84B1BEF8FA30070635D /* ControlHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E84A1BEF8FA30070635D /* ControlHandler.swift */; };
 		FFCA13D61BEF34B200A9F161 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13D51BEF34B200A9F161 /* RequestHandler.swift */; };
@@ -47,9 +47,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D965445DA512B7EC807CB96 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		265863029E5263540041DF39 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F0FCFE3CA41CD57D02D5010 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		05C0A8F7841EF34A0E586D1A /* Pods_FBSimulatorClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBSimulatorClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBB5257D0F26353B4F1CA54 /* Pods-FBSimulatorClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSimulatorClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBSimulatorClient/Pods-FBSimulatorClient.release.xcconfig"; sourceTree = "<group>"; };
+		D84BAE97D475F90CC43C6071 /* Pods-FBSimulatorClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSimulatorClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBSimulatorClient/Pods-FBSimulatorClient.debug.xcconfig"; sourceTree = "<group>"; };
 		FF15E8451BEF7A1C0070635D /* KillRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KillRequestHandler.swift; sourceTree = "<group>"; };
 		FF15E84A1BEF8FA30070635D /* ControlHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlHandler.swift; sourceTree = "<group>"; };
 		FFCA13D41BEF34B100A9F161 /* FBSimulatorClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBSimulatorClient-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF8DB5B1BEE71C900C6EAE4 /* FBSimulatorControl.framework in Frameworks */,
-				934B20AAB385BC68DFAC28BC /* libPods.a in Frameworks */,
+				E10249DDE3457ABCAB14D4DD /* Pods_FBSimulatorClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,19 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		149C63F7FB475A1DCBECA351 /* Pods */ = {
+		B5173BF77994241C51CCB41B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0D965445DA512B7EC807CB96 /* Pods.debug.xcconfig */,
-				7F0FCFE3CA41CD57D02D5010 /* Pods.release.xcconfig */,
+				D84BAE97D475F90CC43C6071 /* Pods-FBSimulatorClient.debug.xcconfig */,
+				4DBB5257D0F26353B4F1CA54 /* Pods-FBSimulatorClient.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		67FB17B61AC228BC2B11262C /* Frameworks */ = {
+		F24B1046CE8312F8264A5D26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				265863029E5263540041DF39 /* libPods.a */,
+				05C0A8F7841EF34A0E586D1A /* Pods_FBSimulatorClient.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,8 +129,8 @@
 				FFF8DB381BEE719200C6EAE4 /* FBSimulatorClient */,
 				FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorClientTests */,
 				FFF8DB371BEE719200C6EAE4 /* Products */,
-				149C63F7FB475A1DCBECA351 /* Pods */,
-				67FB17B61AC228BC2B11262C /* Frameworks */,
+				B5173BF77994241C51CCB41B /* Pods */,
+				F24B1046CE8312F8264A5D26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,13 +202,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF8DB531BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorClient" */;
 			buildPhases = (
-				60F91C56E46792E257C259F9 /* Check Pods Manifest.lock */,
+				148A854E91459C55B49C7265 /* [CP] Check Pods Manifest.lock */,
 				FFF8DB321BEE719200C6EAE4 /* Sources */,
 				FFF8DB331BEE719200C6EAE4 /* Frameworks */,
 				FFF8DB341BEE719200C6EAE4 /* Resources */,
 				FFF8DB5C1BEE71D300C6EAE4 /* CopyFiles */,
-				0A571F7F7D0827FEFC2C7E02 /* Copy Pods Resources */,
-				DB78FD494A18C2C0182B206D /* Embed Pods Frameworks */,
+				AC38B26D63F15AEFB22E9ACD /* [CP] Embed Pods Frameworks */,
+				4B4F784E3511C48776883B06 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,29 +293,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A571F7F7D0827FEFC2C7E02 /* Copy Pods Resources */ = {
+		148A854E91459C55B49C7265 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		60F91C56E46792E257C259F9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,19 +308,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DB78FD494A18C2C0182B206D /* Embed Pods Frameworks */ = {
+		4B4F784E3511C48776883B06 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBSimulatorClient/Pods-FBSimulatorClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC38B26D63F15AEFB22E9ACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBSimulatorClient/Pods-FBSimulatorClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -497,7 +497,7 @@
 		};
 		FFF8DB541BEE719200C6EAE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D965445DA512B7EC807CB96 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D84BAE97D475F90CC43C6071 /* Pods-FBSimulatorClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -514,7 +514,7 @@
 		};
 		FFF8DB551BEE719200C6EAE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F0FCFE3CA41CD57D02D5010 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 4DBB5257D0F26353B4F1CA54 /* Pods-FBSimulatorClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
