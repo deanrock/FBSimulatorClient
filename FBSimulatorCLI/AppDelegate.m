@@ -19,7 +19,13 @@
 
 @implementation AppDelegate
 
+- (void)startServer:(NSInteger)port {
+    webserver = [[WebServer alloc]initWithPort:port];
+    [webserver startServer];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    NSInteger portNumber = 9898;
     
     NSArray *arguments = [[NSProcessInfo processInfo] arguments];
     ArgumentParser *parser = [[ArgumentParser alloc]initWithArguments:arguments];
@@ -28,16 +34,16 @@
         NSString *portNumberString = [parser valueForFlag:@"--port"];
         if (portNumberString != nil) {
             NSScanner *scanner = [NSScanner scannerWithString:portNumberString];
-            NSInteger portNumber;
             if ([scanner scanInteger:&portNumber]) {
-                webserver = [[WebServer alloc]initWithPort:portNumber];
-                [webserver startServer];
+                [self startServer:portNumber];
             } else {
                 [NSException raise:@"Invalid port number" format:@"Invalid port number:%@",portNumberString];
             }
         } else {
             [NSException raise:@"Invalid port number" format:@"Please pass a valid port number with --port argument"];
         }
+    } else {
+        [self startServer:portNumber];
     }
 }
 
