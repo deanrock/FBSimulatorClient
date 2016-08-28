@@ -14,7 +14,7 @@ class KillRequestHandler: RequestHandler {
         let processIdentifier = request["processIdentifier"] as String?
         var error : NSError?;
         if let processIdentifierUnwrapped = processIdentifier {
-            let identifier = processIdentifierUnwrapped.toInt()
+            let identifier = Int(processIdentifierUnwrapped)
             if let uIntIndentifier = identifier {
                 SimulatorController.sharedController().killSimulator(UInt(uIntIndentifier), withError: &error)
             }
